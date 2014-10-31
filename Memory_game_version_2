@@ -92,6 +92,7 @@ def draw(canvas):
             length = RECT_WIDTH * i
             canvas.draw_polygon([(x1[0]+length,x1[1]), (x2[0]+length,x2[1]), (x3[0]+length,x3[1]), (x4[0]+length,x4[1])], 1, "black", "green")
         for i in seen_list:
+            canvas.draw_polygon([(x1[0]+length,x1[1]), (x2[0]+length,x2[1]), (x3[0]+length,x3[1]), (x4[0]+length,x4[1])], 1, "white", "black")
             length = RECT_WIDTH * i
             disp_num = str(deck[i]%PAIRS)
             if deck[i]%PAIRS < 10:
